@@ -55,7 +55,7 @@
 -- ORDER BY (totales) DESC;
 
 --Mostrar el iva 10% de los montos totales de facturas (suponer que todos los productos tienen IVA 10%)
--- SELECT factura.id, ROUND(SUM(factura_detalle.cantidad*producto.precio)*.10) totales FROM factura 
+-- SELECT factura.id, ROUND(SUM(factura_detalle.cantidad*producto.precio)*.11) totales FROM factura 
 -- JOIN factura_detalle ON factura.id = factura_id 
 -- JOIN producto ON factura_detalle.producto_id = producto.id
 -- GROUP BY (factura.id)
